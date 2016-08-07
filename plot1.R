@@ -1,0 +1,6 @@
+setClass("myDate")
+setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
+febData <- subset(read.table("household_power_consumption.txt", sep=";", na.strings = "?", colClasses = c("myDate", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"), header = TRUE),  as.Date(Date) >= "2007-02-01" & as.Date(Date) <= "2007-02-02")
+png("plot1.png", width = 480, height = 480)
+with(febData, hist(Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", col="red"))
+dev.off()
