@@ -112,3 +112,7 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+## Instructions
+Make sure to load the dataset into your working directory first.  Run each plot code in R or R Studio.  
+The plots will appear in the working directory as plot1.png, plot2.png, plot3.png, and plot4.png 
+corresponding to the file.
